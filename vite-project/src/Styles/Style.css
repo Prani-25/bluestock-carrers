@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  body {
+    background-color: #fff;
+    color: #1a1a1a;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #ddd;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .logo img {
+    width: 40px;
+    margin-right: 15px;
+  }
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: hsl(0, 0%, 40%);
+    font-weight: 500;
+  }
+  nav a:hover {
+    color: hsl(0, 0%, 20%);
+    
+  }
+  .auth-buttons button {
+    margin-left: 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .auth-buttons button:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+  }
+  .sign-in {
+    background: transparent;
+    color: hsl(0, 0%, 0%);
+  }
+  .sign-up {
+    background: #4f46e5;
+    color: white;
+  }
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 50px;
+    flex-wrap: wrap;
+  }
+  .hero-text {
+    flex: 1;
+    margin-left: 100px;
+    padding-right: 40px;
+  }
+  .hero-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .hero-text p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  .hero-text button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    background: #4f46e5;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .illustration {
+    flex: 1;
+    max-width: 800px;
+    margin-right: 100px;
+  }
+  .illustration img {
+    width: 100%;
+  }
+  .cta {
+    background: #3b82f6;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    width: 80%;
+    border-radius: 1rem;
+    gap: 1rem;
+    margin-left: 150px;
+    text-align: center;
+  }
+  .cta-matter{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      gap: rem;
+      margin-left: 50px;
+  }
+  .cta h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .cta p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .downloads {
+    font-size: 28px;
+    text-align: start;
+    position: relative;
+    top: 40px;
+    color: gold;
+    font-weight: bold;
+    
+  }
+  .cta img{
+    width: 25%;
+    position: relative ;
+    top: 40px ;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+   
+  }
+  .form-section input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 6px;
+    border: none;
+    margin-right: 10px;
+    
+  }
+  .form-section button {
+    padding: 10px 15px;
+    background: white;
+    color: #3b82f6;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .store-badges{
+    display: flex;
+    flex-direction: column;
+  }
+  .store-badges img {
+    width: 120px;
+    margin: 8px 10px ;
+    cursor: pointer;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  .apps{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+  }
+  .app-qr{
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    cursor: pointer;
+  }
+  footer {
+    background-color: #f3f4f6;
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  footer p {
+    margin-bottom: 10px;
+  }
+
+
+
+  /* ======== Responsive: Tablets (768px and below) ======== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .auth-buttons {
+    margin-top: 15px;
+    align-self: flex-end;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin: 0;
+    padding: 0;
+  }
+
+  .illustration {
+    margin: 30px 0 0;
+    max-width: 100%;
+  }
+
+  .cta {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    padding: 30px 20px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .cta img {
+    width: 70%;
+    position: static;
+  }
+
+  .downloads {
+    position: static;
+    margin: 20px 0;
+    font-size: 24px;
+  }
+
+  .cta-matter {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .apps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .store-badges {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .store-badges img {
+    margin: 10px;
+  }
+
+  .form-section {
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .form-section input {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* ======== Responsive: Mobile Devices (480px and below) ======== */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero-text button {
+    width: 100%;
+  }
+
+  .cta h2 {
+    font-size: 28px;
+  }
+
+  .cta p {
+    font-size: 16px;
+  }
+
+  .downloads {
+    font-size: 20px;
+  }
+
+  .form-section input {
+    max-width: 100%;
+  }
+
+  .store-badges img {
+    width: 100px;
+  }
+
+  footer {
+    padding: 30px 10px;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    border-top: 1px solid #eee;
+    padding: 10px 20px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .auth-buttons {
+    display: none;
+  }
+}
